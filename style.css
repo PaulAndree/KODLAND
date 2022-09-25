@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.color-acento{ color:whitesmoke; font-size:60px }
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color:black;
+    background-color:orange;
+}
+
+button:hover{
+    background-color:red;
+}
+
+
+header{
+    background-color:rgb(250, 44, 17);
+}
+
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .logotipo{
+    margin:0;
+    padding: 25px 30px;
+    color:white;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+header a{
+    padding: 5px 12px;
+    color:white;
+}
+header a:hover{
+    color: blue;    
+}
+
+
+#popit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(media/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh);
+
+}
+#popit .text{
+    text-align: left;
+    padding-left: 60px;
+    font-size: 20px;
+
+}
+#popit button{ 
+    margin-top: 30px;
+    font-size: 1.2em; 
+}
+
+#takoe{
+    text-align: center;
+    padding: 200px 12px;
+}
+#takoe h2{
+    padding-bottom: 20px;
+}
+
+#choose{
+    background-color: skyblue;
+    text-align: center;
+}
+#choose .container{
+    padding: 50px 12px;
+}
+#choose h2{
+    padding-top: 50px;
+    font-size: 1.5rem;
+}
+
+#choose .carta{
+    background-position: center center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    padding: 0px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+#choose .carta h3{
+    padding-top: 280px;
+    text-align: center;
+}
+.carta:first-child{
+    background-image: url(media/square.png);
+}
+.carta:nth-child(2){
+    background-image:  url(media/amongus.png);
+}
+.carta:nth-child(3){
+    background-image: url(media/round.png);
+}
+
+
+#caracteristicas .container{
+    display:flex;
+    flex-direction: row-reverse;
+    height:60vh;
+    background-image: url(media/bg-grid2.png);
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+}
+
+#caracteristicas .texto{
+    text-align: initial;
+    font-size:0.7rem;
+    padding-left: 20px;
+}
+
+#caracteristicas .image_container{
+    height: 150px;
+    width:250px;
+    background-image: url(media/photo.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+
+}
+
+footer{
+    background: #403E39;
+    padding: 1rem 0;
+}
+footer .footerlogo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+footer .logotipo{
+    font-size: large;
+    color:white;
+    padding-left: 30px;
+}
+footer a{
+    color:white;
+    padding-right: 30px;
+    font-size:0.9rem;
+}
+footer a:hover{
+    color: blue;    
+}
+
+@media (min-width: 858px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #choose .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #choose .carta{
+        padding: 50px;
+        background-size: 100% 250px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+
+    #caracteristicas .texto{
+        text-align: initial;
+        font-size:1.1rem;
+        padding-right: 65px;
+    }
+    
+    #caracteristicas .image_container{
+        height: 250px;
+        width:300px;
+        background-image: url(media/photo.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    
+    }
+
+    footer a{
+        color:white;
+        padding-right: 90px;
+        font-size:1rem;
+    }
+}
